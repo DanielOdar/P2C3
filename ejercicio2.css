@@ -1,0 +1,16 @@
+.txt-titulo{
+    font-weight: bold;
+    color: red !important;
+}
+
+.txt-subrayar{
+    text-decoration: underline;
+}
+
+.txt-verde{
+    color: green;
+}
+
+#txtnombre{
+    color: violet;
+}

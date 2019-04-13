@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Agenda de contactos</title>
+  </head>
+  <body>
+    
+    <div class="container">
+        <h1>Agenda de contactos</h1>
+        <hr>
+        <div class="row">
+            <!--.col*2 +tab-->
+            <div class="col">
+                <h3>Formulario</h3>
+
+                <!--input : nombre-->
+                <div class="form-group">
+                    <label for="txtnombre">Nombre:</label>
+                    <input type="text" class="form-control" name="" id="txtnombre" placeholder="Ingresa tu name">
+                </div>
+
+                <div class="form-group">
+                        <label for="txtemail">Correo:</label>
+                        <input type="email" class="form-control" name="" id="txtemail" placeholder="Ingresa correo">
+                </div>
+
+                <div class="form-group">
+                        <label for="txtfecha">Fecha Nac:</label>
+                        <input type="date" class="form-control" name="" id="txtfecha" placeholder="01-01-1900">
+                </div>
+
+                <div class="form-group">
+                        <label for="cbopais">Pais:</label>
+                        <select id="cbopais" class="custom-select">
+                            <option value="Peru">Peru</option>
+                            <option value="Chile">Chile</option>
+                            <option value="Argentina">Argentina</option>
+                        </select>
+                </div>
+
+                <!--radiobutton: sexo-->
+                <div class="form-group mb-4">
+                    <label for="">Sexo:</label>
+                    <div class="row">
+                        <div class="col">
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="rbmasculino" name="rbsexo" class="custom-control-input" value="M">
+                                <label class="custom-control-label" for="rbmasculino">Masculino</label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="rbfemenino" name="rbsexo" class="custom-control-input" value="F">
+                                <label class="custom-control-label" for="rbfemenino">Femenino</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Registrar-->
+                <a href="" id="btnRegistrar" class="btn btn-primary"> Registrar</a>
+
+            </div>
+            <div class="col">
+                <h3>Lista de contactos</h3>
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Correo</th>
+                            <th>F. Nac.</th>
+                            <th>Pais</th>
+                            <th>Sexo</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="tbldatos">
+                        <tr>
+                            <td>Juan</td>
+                            <td>jflores@usat.edu.pe</td>
+                            <td>26-10-1997</td>
+                            <td>Peru</td>
+                            <td>M</td>
+                            <td>
+                                <button class="btn btn-danger btn-sm opcion-eliminar">X</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div><!--.row + tab-->
+
+    </div>
+    <!-- etiqueta div es de estilo para agrupar internamente-->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="agenda.js"></script>
+  </body>
+</html>
